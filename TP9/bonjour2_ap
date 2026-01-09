@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+
+import argparse
+
+parser = argparse.ArgumentParser(description="Affiche Bonjour suivi par un nom")
+
+# un argument obligatoire
+parser.add_argument("nom", type=str, help="un nom affiché")
+
+
+args = parser.parse_args()
+
+
+print(f"Bonjour {args.nom}")

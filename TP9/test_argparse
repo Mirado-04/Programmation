@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+
+import argparse
+
+parser = argparse.ArgumentParser(description="Test du module argparse")
+
+# un argument obligatoire
+parser.add_argument("num", type=int, help="an integer number")
+
+# un argument optionnel (le type est str si on ne le précise pas)
+parser.add_argument("name", nargs="?", default="a name", help="a name")
+
+# une option supplémentaire
+parser.add_argument("-v", "--verbose", help="increase output verbosity", action="store_true")
+
+args = parser.parse_args()
+
+if args.verbose:
+    print(f"args.name vaut {args.name} et args.num vaut {args.num}")
+else:
+    print(f"{args.name} {args.num}")

@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+import sys
+
+if len(sys.argv)!=2:
+    print("usage: ./bonjour2 nom")
+else:
+    print("Bonjour",sys.argv[1])

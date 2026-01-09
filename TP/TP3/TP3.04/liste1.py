@@ -1,0 +1,10 @@
+liste = [1, 4, 5, 67, 23.2, -12, 0]
+print("Premier élément:",liste[0])
+print("Dernier élément:",liste[-1])
+print("3 premiers éléments = ",liste[0:3:1])
+print("3 derniers éléments = ",liste[-3::1])
+print("Min =",max(liste))
+print("Max = ",min(liste))
+print("Somme=",sum(liste))
+print("Liste ordonnée de manière croissante =",sorted(liste))
+print("Liste ordonnée de manière décroissante = ",sorted((liste),reverse=True))
